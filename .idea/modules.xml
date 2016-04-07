@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CircleViewPager/CircleViewPager.iml" filepath="$PROJECT_DIR$/CircleViewPager/CircleViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodimote2.iml" filepath="$PROJECT_DIR$/Kodimote2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewserver/viewserver.iml" filepath="$PROJECT_DIR$/viewserver/viewserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wear/wear.iml" filepath="$PROJECT_DIR$/wear/wear.iml" />
+    </modules>
+  </component>
+</project>

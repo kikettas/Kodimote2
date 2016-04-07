@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="RtlHardcoded"
+    >
+
+    <android.support.design.widget.CoordinatorLayout android:id="@+id/main_content"
+                                                     xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent"
+                                                     android:background="@color/backgroundFragmentsDark"
+                                                     android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout_season"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow_fanart_bottom"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_season"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+                <LinearLayout
+                    android:id="@+id/main_linearlayout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:orientation="horizontal"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.3"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvshow_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="130dp"
+                        android:gravity="left"
+                        android:text="Halt and the catch fire"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        app:layout_behavior="com.dpg.kodimote.view.TitleToolbarBehavior"/>
+
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view_season"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundLayouts"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="120dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/season_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Temporada 20"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:id="@+id/episodes_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/season_name"
+                        android:layout_marginLeft="0dp"
+                        android:text="23 episodes"
+                        android:textColor="@color/abc_primary_text_material_dark"/>
+
+                    <ImageView
+                        android:id="@+id/season_network"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBottom="@+id/season_name"
+                        android:layout_alignTop="@+id/season_name"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/episodes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/backgroundFragmentsDark"/>
+
+                <com.dpg.kodimote.view.ExpandableHeightGridView
+                    android:id="@+id/grid_episodes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:horizontalSpacing="5dp"
+                    android:isScrollContainer="false"
+                    android:verticalSpacing="15dp"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.dpg.kodimote.view.CoordinatedImageView
+            android:id="@+id/poster_season"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            app:layout_anchor="@id/appbarlayout_season"
+            app:layout_anchorGravity="bottom|left"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

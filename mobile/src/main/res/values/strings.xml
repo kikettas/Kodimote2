@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kodimote</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="allmovies_url_request">/jsonrpc?request={\"jsonrpc\":\"2.0\",\"method\":\"VideoLibrary.GetMovies\",\"params\":{\"properties\":[\"art\",\"rating\",\"country\",\"tagline\",\"playcount\",\"runtime\",\"file\",\"writer\",\"trailer\",\"imdbnumber\",\"genre\",\"cast\",\"director\",\"plot\",\"year\"],\"sort\":{\"order\":\"ascending\",\"method\":\"label\",\"ignorearticle\":false}},\"id\":\"libMovies\"}</string>
+    <string name="allseries_url_request">/jsonrpc?request={\"jsonrpc\":\"2.0\",\"method\":\"VideoLibrary.GetTVShows\",\"params\":{\"properties\":[\"art\",\"rating\",\"playcount\",\"file\",\"imdbnumber\",\"genre\",\"season\",\"episode\",\"studio\",\"votes\",\"plot\",\"year\"],\"sort\":{\"order\":\"ascending\",\"method\":\"label\",\"ignorearticle\":false}},\"id\":\"libSeries\"}</string>
+    <string name="ping_json">/jsonrpc?request={\"jsonrpc\":\"2.0\",\"method\":\"JSONRPC.Ping\",\"id\":\"jsonConfiguration\"}"</string>
+
+    <string name="get_player_state">/jsonrpc?request={\"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"Player.GetActivePlayers\"}</string>
+    <string name="get_playlist_items">/jsonrpc?request={\"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"Playlist.GetItems\",\"params\":{\"properties\":[\"art\",\"rating\",\"country\",\"tagline\",\"playcount\",\"runtime\",\"file\",\"writer\",\"trailer\",\"imdbnumber\",\"genre\",\"director\",\"plot\",\"year\",\"season\",\"tvshowid\",\"episode\",\"votes\"],\"playlistid\":1}}}</string>
+
+    <string name="episodes">Episodes</string>
+    <string name="preference_file_key">com.dpg.kodimote.PREFERENCE_FILE_KEY</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="season">Season</string>
+    <string name="episode">Episode</string>
+    <string name="update_library">Update Library</string>
+    <string name="clean_library">Clean library</string>
+    <string name="reboot_system">Reboot system</string>
+    <string name="shutdown_system">Shutdown system</string>
+</resources>

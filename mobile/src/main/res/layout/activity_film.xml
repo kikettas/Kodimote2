@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@+id/main_content"
+                                                 xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/backgroundFragmentsDark"
+                                                 android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout_film"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_fanart_bottom_higher"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_film"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/Theme.AppCompat.NoActionBar"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view_film"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundLayouts"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/media_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="160"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="min"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/media_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.9"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="/10"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/media_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015"
+                        android:textColor="@color/abc_primary_text_material_dark"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drama,Thriller"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroundFragmentsDark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/media_synopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textAlignment="center"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:padding="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgroundFragmentsDark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Play trailer"
+                        android:id="@+id/play_trailer_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Playlist"
+                        android:id="@+id/add_playlist_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Director"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/streams_buttons_selector"
+                    android:padding="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Writer"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:padding="10dp"
+                    android:background="@drawable/streams_buttons_selector"
+                    android:layout_below="@+id/director"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/directors"/>
+
+                <TextView
+                    android:id="@+id/cast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cast"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:background="@drawable/streams_buttons_selector"
+                    android:padding="10dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:clickable="true"
+                    android:layout_below="@+id/writers"
+                    android:layout_alignEnd="@+id/writers"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/directors"
+                    android:layout_alignBottom="@+id/director"
+                    android:layout_toEndOf="@+id/director"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/streams_buttons_selector"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/writers"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/streams_buttons_selector"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_below="@+id/director"
+                    android:layout_toEndOf="@+id/writer"
+                    android:layout_alignLeft="@+id/directors"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/play_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_play_dark"
+        app:backgroundTint="@color/material_deep_teal_500"
+        app:layout_anchor="@id/appbarlayout_film"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

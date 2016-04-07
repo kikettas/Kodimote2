@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dpg.kodimote.controller.activity.AddingMediaCenterActivity"
+    android:id="@+id/adding_media_centers_mainlayout"
+    android:background="@color/backgroundFragmentsDark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can now add a new Kodi Media Center. If your Kodi is not detected, try introducing manually the configuration."
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:padding="16dp"
+        android:background="@color/backgroundLayouts"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView5"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_kodidevices_listview"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

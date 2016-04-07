@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="left"
+              android:background="@android:color/transparent"
+              android:id="@+id/director_layout">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:id="@+id/movies_count"
+        android:textSize="30dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Quentin Tarantino"
+        android:id="@+id/name_director"
+        android:layout_marginLeft="16dp"
+        android:textSize="25sp"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:gravity="center_vertical"/>
+</LinearLayout>

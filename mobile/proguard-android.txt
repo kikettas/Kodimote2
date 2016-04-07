@@ -1,0 +1,4 @@
+ New Relic
+-keep class com.dpg.** { *; }
+-dontwarn com.dpg.**
+-keepattributes Exceptions, Signature, InnerClasses

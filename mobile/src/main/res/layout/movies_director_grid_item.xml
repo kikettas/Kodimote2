@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/backgroundLayouts"
+                        android:elevation="5dp"
+                        android:focusable="false">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/director_movie_poster"
+                android:layout_width="80dp"
+                android:layout_height="130dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/director_movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/director_movie_poster"
+                android:text="Algo voló sobre el nido del cuco"
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"/>
+
+            <TextView
+                android:id="@+id/director_movie_tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColorHighlight="@color/abc_secondary_text_material_dark"
+                android:layout_below="@+id/director_movie_title"
+                android:layout_alignStart="@+id/director_movie_title"/>
+
+            <TextView
+                android:id="@+id/director_movie_duration_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120min | 2015"
+                android:textColor="@color/abc_secondary_text_material_dark"
+                android:textSize="16dp"
+                android:layout_alignBottom="@+id/director_movie_poster"
+                android:layout_alignStart="@+id/director_movie_tagline"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+</LinearLayout>

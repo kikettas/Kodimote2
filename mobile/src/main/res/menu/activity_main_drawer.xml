@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/remote"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Remote" />
+        <item
+            android:id="@+id/movies"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Movies" />
+        <item
+            android:id="@+id/tvshows"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="TV Shows" />
+        <item
+            android:id="@+id/music"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Music" />
+    </group>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/update_library"
+        android:orderInCategory="100"
+        android:title="@string/update_library"/>
+    <item
+        android:id="@+id/clean_library"
+        android:orderInCategory="100"
+        android:title="@string/clean_library"/>
+    <item
+        android:id="@+id/reboot_system"
+        android:orderInCategory="100"
+        android:title="@string/reboot_system"/>
+    <item
+        android:id="@+id/shutdown_system"
+        android:orderInCategory="100"
+        android:title="@string/shutdown_system"/>
+
+</menu>

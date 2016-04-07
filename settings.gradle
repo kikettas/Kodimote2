@@ -1,0 +1,2 @@
+include ':mobile', ':wear', ':volley', ':viewserver'
+include ':CircleViewPager'

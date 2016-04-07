@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#373841</color>
+    <color name="colorPrimaryDark">#181922</color>
+    <color name="colorAccent">#676975</color>
+    <color name="whiteToolbar">#ffffff</color>
+    <color name="backgroundFragmentsDark">#a9181922</color>
+    <color name="backgroundLayouts">#cf373841</color>
+    <color name="backgroundButtons">#4b4d59</color>
+    <color name="backgroundButtonsPressed">#9193a4</color>
+    <color name="button_pressed">#bfbfbf</color>
+    <color name="button_unpressed">#FFFFFF</color>
+
+</resources>

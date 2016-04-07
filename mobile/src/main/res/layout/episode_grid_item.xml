@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/episode_layout"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:id="@+id/episode_poster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La muerte del gato preto machote"
+        android:id="@+id/host_name"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/episode_poster"
+        android:layout_toLeftOf="@+id/tick_watched"
+        android:layout_toStartOf="@id/tick_watched"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="180min"
+        android:id="@+id/host_ip"
+        android:layout_above="@+id/episode_rating"
+        android:layout_toEndOf="@+id/episode_poster"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.9"
+        android:id="@+id/episode_rating"
+        android:layout_alignBottom="@+id/episode_poster"
+        android:layout_alignStart="@+id/host_ip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-02-2014"
+        android:id="@+id/episode_firstaired"
+        android:layout_below="@+id/host_ip"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/tick_watched"
+        android:src="@drawable/tick"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/host_name"/>
+</RelativeLayout>
