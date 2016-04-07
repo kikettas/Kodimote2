@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/enriquedelpozogomez/AndroidStudioProjects/Kodimote2/CircleViewPager/build/intermediates/res/merged/release/color/vpi__dark_theme.xml",
+        "source": "/Users/enriquedelpozogomez/AndroidStudioProjects/Kodimote2/CircleViewPager/src/main/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/enriquedelpozogomez/AndroidStudioProjects/Kodimote2/CircleViewPager/build/intermediates/res/merged/release/color/vpi__light_theme.xml",
+        "source": "/Users/enriquedelpozogomez/AndroidStudioProjects/Kodimote2/CircleViewPager/src/main/res/color/vpi__light_theme.xml"
+    }
+]
